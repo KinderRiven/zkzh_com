@@ -1,0 +1,17 @@
+﻿Build started 2015/12/30 17:06:44.
+     1>Project "F:\KinderRiven\comPort\comPort\comPort.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         F:\VS2013NEW\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"F:\KinderRiven\comPort\x64\Release\\comPort.exe" /NOLOGO /LIBPATH:F:\QT\QT5.4.2\5.4\msvc2013_64\lib qtmain.lib Qt5Core.lib Qt5Gui.lib Qt5Multimedia.lib Qt5MultimediaWidgets.lib Qt5Widgets.lib Qt5SerialPort.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"F:\KinderRiven\comPort\x64\Release\comPort.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\KinderRiven\comPort\x64\Release\comPort.lib" /MACHINE:X64 x64\Release\comport.obj
+         x64\Release\qrc_comport.obj
+         x64\Release\moc_comport.obj
+         x64\Release\moc_receThread.obj
+         x64\Release\moc_sendThread.obj
+         x64\Release\main.obj
+         x64\Release\receThread.obj
+         x64\Release\sendThread.obj
+         comPort.vcxproj -> F:\KinderRiven\comPort\x64\Release\comPort.exe
+     1>Done Building Project "F:\KinderRiven\comPort\comPort\comPort.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.32
