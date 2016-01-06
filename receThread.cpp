@@ -6,6 +6,9 @@ receThread::receThread(){
     waitTime = 1000;
 
 	runType = 0;
+
+	runManache = 20;
+
 }
 
 
@@ -120,6 +123,8 @@ void receThread::startLight(char c, QSerialPort &serial){
 
 	if (serial.waitForBytesWritten(1000)){
 
+
+
 	}
 	qDebug() << "Light ...";
 
@@ -131,14 +136,20 @@ void receThread::getTemperature(QByteArray &byteArray, QSerialPort &serial){
 
 	qDebug() << "Temperature " << temper;
 
-	if (temper >= 20){
+	QDateTime date = QDateTime::currentDateTime();
+
+	QString data = date.toString() + " The temperature:" + QString::number(temper);
+
+	log.writeInFile(data);
+
+	if (temper >= runManache){
 		
 		if (runType & (1 << 1)){
 			startMachine(0x0a, serial);
 		}
 	}
 
-	else if (temper < 20){
+	else if (temper < runManache){
 
 		if (runType & (1 << 1)){
 
@@ -154,6 +165,12 @@ void receThread::getHumidity(QByteArray &byteArray, QSerialPort &serial){
 
 	int temper = 256 * byteArray[7] + byteArray[8];
 
+	QDateTime date = QDateTime::currentDateTime();
+
+	QString data = date.toString() + " The Humidity:" + QString::number(temper);
+
+	log.writeInFile(data);
+
 	qDebug() << "Humidity" << temper;
 
 	emit this->setHumidity(temper);
@@ -164,6 +181,12 @@ void receThread::getLight(QByteArray &byteArray, QSerialPort &serial){
 	int temper = (256 * byteArray[9] + byteArray[10]) * 3012.9 / (32768 * 4);
 
 	qDebug() << temper;
+
+	QDateTime date = QDateTime::currentDateTime();
+
+	QString data = date.toString() + " The light:" + QString::number(temper);
+
+	log.writeInFile(data);
 
 	qDebug() << "Light " << temper;
 

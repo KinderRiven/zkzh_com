@@ -68,6 +68,9 @@
     <ClCompile Include="GeneratedFiles\Release\moc_receThread.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
+    <ClCompile Include="logFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="comport.h">
@@ -94,6 +97,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="zigbeeid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="logFile.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

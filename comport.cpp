@@ -64,6 +64,8 @@ comPort::comPort(QWidget *parent)
 	QObject::connect(ui.btnRunType0, SIGNAL(clicked()), this, SLOT(slotChangeToType0()));
 	QObject::connect(ui.btnRunType2, SIGNAL(clicked()), this, SLOT(slotChangeToType2()));
 
+	QObject::connect(ui.btnFan, SIGNAL(clicked()), this, SLOT(slotSetManache()));
+
 
 	QObject::connect(ui.btnExit, SIGNAL(clicked()), this, SLOT(slotExit()));
 
@@ -262,5 +264,18 @@ void comPort::slotSetVibration(){
 void comPort::slotSetManacher(const QString &s){
 
 	ui.labManStatus->setText(s);
+
+}
+
+void comPort::slotSetManache(){
+
+	bool ok;
+
+	int number = ui.txtFan->text().toInt(&ok, 10);
+
+	qDebug() << number << endl;
+
+	if (ok)
+		rThread.runManache = number;
 
 }

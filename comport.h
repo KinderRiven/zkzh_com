@@ -37,6 +37,7 @@ public slots:
 	void slotSetTemperature(const int &temper);
 	void slotSetHumidity(const int &temper);
 	void slotSetLight(const int &temper);
+	void slotSetManache();
 	void slotSetVibration();
 	void slotExit();
 

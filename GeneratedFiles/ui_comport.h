@@ -137,6 +137,8 @@ public:
     QCheckBox *checkHeat;
     QCheckBox *checkLight;
     QCheckBox *checkSmoke;
+    QPushButton *btnFan;
+    QLineEdit *txtFan;
 
     void setupUi(QMainWindow *comPortClass)
     {
@@ -663,7 +665,7 @@ public:
         line_23->setFrameShape(QFrame::HLine);
         line_24 = new QFrame(centralWidget);
         line_24->setObjectName(QStringLiteral("line_24"));
-        line_24->setGeometry(QRect(960, 120, 20, 221));
+        line_24->setGeometry(QRect(960, 120, 20, 231));
         line_24->setFont(font4);
         line_24->setFrameShadow(QFrame::Raised);
         line_24->setFrameShape(QFrame::VLine);
@@ -868,7 +870,7 @@ public:
         line_40->setFrameShape(QFrame::VLine);
         labLight_2 = new QLabel(centralWidget);
         labLight_2->setObjectName(QStringLiteral("labLight_2"));
-        labLight_2->setGeometry(QRect(840, 360, 81, 31));
+        labLight_2->setGeometry(QRect(850, 370, 81, 31));
         labLight_2->setFont(font3);
         labLight_2->setFrameShadow(QFrame::Raised);
         labLight_2->setAlignment(Qt::AlignCenter);
@@ -955,6 +957,14 @@ public:
         checkSmoke = new QCheckBox(centralWidget);
         checkSmoke->setObjectName(QStringLiteral("checkSmoke"));
         checkSmoke->setGeometry(QRect(810, 260, 16, 19));
+        btnFan = new QPushButton(centralWidget);
+        btnFan->setObjectName(QStringLiteral("btnFan"));
+        btnFan->setGeometry(QRect(710, 550, 71, 31));
+        btnFan->setFont(font);
+        txtFan = new QLineEdit(centralWidget);
+        txtFan->setObjectName(QStringLiteral("txtFan"));
+        txtFan->setGeometry(QRect(610, 550, 71, 31));
+        txtFan->setFont(font);
         comPortClass->setCentralWidget(centralWidget);
 
         retranslateUi(comPortClass);
@@ -1015,6 +1025,8 @@ public:
         checkHeat->setText(QString());
         checkLight->setText(QString());
         checkSmoke->setText(QString());
+        btnFan->setText(QApplication::translate("comPortClass", "Fan", 0));
+        txtFan->setText(QApplication::translate("comPortClass", "20", 0));
     } // retranslateUi
 
 };

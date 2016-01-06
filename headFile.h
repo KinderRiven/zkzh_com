@@ -12,6 +12,8 @@
 
 #include "zigbeeid.h"
 
+
+#include "logFile.h"
 using namespace std;
 
 #define BUFFER_SIZE 1024

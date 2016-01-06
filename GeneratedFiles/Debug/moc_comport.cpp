@@ -19,8 +19,8 @@
 
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_comPort_t {
-    QByteArrayData data[19];
-    char stringdata[262];
+    QByteArrayData data[20];
+    char stringdata[277];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -43,11 +43,12 @@ QT_MOC_LITERAL(10, 127, 18), // "slotSetTemperature"
 QT_MOC_LITERAL(11, 146, 6), // "temper"
 QT_MOC_LITERAL(12, 153, 15), // "slotSetHumidity"
 QT_MOC_LITERAL(13, 169, 12), // "slotSetLight"
-QT_MOC_LITERAL(14, 182, 16), // "slotSetVibration"
-QT_MOC_LITERAL(15, 199, 8), // "slotExit"
-QT_MOC_LITERAL(16, 208, 17), // "slotChangeToType0"
-QT_MOC_LITERAL(17, 226, 17), // "slotChangeToType1"
-QT_MOC_LITERAL(18, 244, 17) // "slotChangeToType2"
+QT_MOC_LITERAL(14, 182, 14), // "slotSetManache"
+QT_MOC_LITERAL(15, 197, 16), // "slotSetVibration"
+QT_MOC_LITERAL(16, 214, 8), // "slotExit"
+QT_MOC_LITERAL(17, 223, 17), // "slotChangeToType0"
+QT_MOC_LITERAL(18, 241, 17), // "slotChangeToType1"
+QT_MOC_LITERAL(19, 259, 17) // "slotChangeToType2"
 
     },
     "comPort\0slotSend\0\0slotSendTextArea\0s\0"
@@ -55,8 +56,9 @@ QT_MOC_LITERAL(18, 244, 17) // "slotChangeToType2"
     "soltReceStartButton\0soltReceStopButton\0"
     "slotReceTextArea\0slotSetTemperature\0"
     "temper\0slotSetHumidity\0slotSetLight\0"
-    "slotSetVibration\0slotExit\0slotChangeToType0\0"
-    "slotChangeToType1\0slotChangeToType2"
+    "slotSetManache\0slotSetVibration\0"
+    "slotExit\0slotChangeToType0\0slotChangeToType1\0"
+    "slotChangeToType2"
 };
 #undef QT_MOC_LITERAL
 
@@ -66,7 +68,7 @@ static const uint qt_meta_data_comPort[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-      15,   14, // methods
+      16,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -74,21 +76,22 @@ static const uint qt_meta_data_comPort[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    0,   89,    2, 0x0a /* Public */,
-       3,    1,   90,    2, 0x0a /* Public */,
-       5,    1,   93,    2, 0x0a /* Public */,
-       6,    0,   96,    2, 0x0a /* Public */,
-       7,    0,   97,    2, 0x0a /* Public */,
-       8,    0,   98,    2, 0x0a /* Public */,
-       9,    1,   99,    2, 0x0a /* Public */,
-      10,    1,  102,    2, 0x0a /* Public */,
-      12,    1,  105,    2, 0x0a /* Public */,
-      13,    1,  108,    2, 0x0a /* Public */,
-      14,    0,  111,    2, 0x0a /* Public */,
-      15,    0,  112,    2, 0x0a /* Public */,
-      16,    0,  113,    2, 0x0a /* Public */,
-      17,    0,  114,    2, 0x0a /* Public */,
-      18,    0,  115,    2, 0x0a /* Public */,
+       1,    0,   94,    2, 0x0a /* Public */,
+       3,    1,   95,    2, 0x0a /* Public */,
+       5,    1,   98,    2, 0x0a /* Public */,
+       6,    0,  101,    2, 0x0a /* Public */,
+       7,    0,  102,    2, 0x0a /* Public */,
+       8,    0,  103,    2, 0x0a /* Public */,
+       9,    1,  104,    2, 0x0a /* Public */,
+      10,    1,  107,    2, 0x0a /* Public */,
+      12,    1,  110,    2, 0x0a /* Public */,
+      13,    1,  113,    2, 0x0a /* Public */,
+      14,    0,  116,    2, 0x0a /* Public */,
+      15,    0,  117,    2, 0x0a /* Public */,
+      16,    0,  118,    2, 0x0a /* Public */,
+      17,    0,  119,    2, 0x0a /* Public */,
+      18,    0,  120,    2, 0x0a /* Public */,
+      19,    0,  121,    2, 0x0a /* Public */,
 
  // slots: parameters
     QMetaType::Void,
@@ -101,6 +104,7 @@ static const uint qt_meta_data_comPort[] = {
     QMetaType::Void, QMetaType::Int,   11,
     QMetaType::Void, QMetaType::Int,   11,
     QMetaType::Void, QMetaType::Int,   11,
+    QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -125,11 +129,12 @@ void comPort::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, voi
         case 7: _t->slotSetTemperature((*reinterpret_cast< const int(*)>(_a[1]))); break;
         case 8: _t->slotSetHumidity((*reinterpret_cast< const int(*)>(_a[1]))); break;
         case 9: _t->slotSetLight((*reinterpret_cast< const int(*)>(_a[1]))); break;
-        case 10: _t->slotSetVibration(); break;
-        case 11: _t->slotExit(); break;
-        case 12: _t->slotChangeToType0(); break;
-        case 13: _t->slotChangeToType1(); break;
-        case 14: _t->slotChangeToType2(); break;
+        case 10: _t->slotSetManache(); break;
+        case 11: _t->slotSetVibration(); break;
+        case 12: _t->slotExit(); break;
+        case 13: _t->slotChangeToType0(); break;
+        case 14: _t->slotChangeToType1(); break;
+        case 15: _t->slotChangeToType2(); break;
         default: ;
         }
     }
@@ -160,13 +165,13 @@ int comPort::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 15)
+        if (_id < 16)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 15;
+        _id -= 16;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 15)
+        if (_id < 16)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 15;
+        _id -= 16;
     }
     return _id;
 }

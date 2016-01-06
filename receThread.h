@@ -28,6 +28,7 @@ public:
 	void startLight(char c, QSerialPort &serial);
 
 	int runType;
+	int runManache;
 
 signals:
 	void setVibration();
@@ -43,5 +44,8 @@ private:
 	int waitTime;
 	int type;
 	int rate;
+
+	LOG_TEXT log;
+	
 };
 

@@ -1,11 +1,20 @@
-﻿Build started 2016/1/4 13:22:21.
+﻿Build started 2016/1/6 0:20:53.
      1>Project "F:\KinderRiven\comPort\comPort\comPort.vcxproj" on node 2 (Build target(s)).
-     1>Link:
+     1>CustomBuild:
+         Uic'ing comport.ui...
+       ClCompile:
+         F:\VS2013NEW\VC\bin\x86_amd64\CL.exe /c /IF:\QT\QT5.4.2\5.4\msvc2013_64\include /I.\GeneratedFiles /I. /IF:\QT\QT5.4.2\5.4\msvc2013_64\include /I.\GeneratedFiles\Debug /IF:\QT\QT5.4.2\5.4\msvc2013_64\include\QtCore /IF:\QT\QT5.4.2\5.4\msvc2013_64\include\QtGui /IF:\QT\QT5.4.2\5.4\msvc2013_64\include\QtMultimedia /IF:\QT\QT5.4.2\5.4\msvc2013_64\include\QtMultimediaWidgets /IF:\QT\QT5.4.2\5.4\msvc2013_64\include\QtWidgets /Zi /nologo /W1 /WX- /Od /D UNICODE /D WIN32 /D WIN64 /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /D QT_MULTIMEDIA_LIB /D QT_MULTIMEDIAWIDGETS_LIB /D QT_WIDGETS_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt GeneratedFiles\Debug\moc_comport.cpp comport.cpp main.cpp
+         moc_comport.cpp
+         comport.cpp
+         main.cpp
+         Generating Code...
+       Link:
          F:\VS2013NEW\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"F:\KinderRiven\comPort\x64\Debug\\comPort.exe" /NOLOGO /LIBPATH:F:\QT\QT5.4.2\5.4\msvc2013_64\lib qtmaind.lib Qt5Cored.lib Qt5Guid.lib Qt5Multimediad.lib Qt5MultimediaWidgetsd.lib Qt5Widgetsd.lib Qt5SerialPort.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\KinderRiven\comPort\x64\Debug\comPort.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\KinderRiven\comPort\x64\Debug\comPort.lib" /MACHINE:X64 x64\Debug\comport.obj
          x64\Debug\moc_comport.obj
          x64\Debug\moc_receThread.obj
          x64\Debug\moc_sendThread.obj
          x64\Debug\qrc_comport.obj
+         x64\Debug\logFile.obj
          x64\Debug\main.obj
          x64\Debug\receThread.obj
          x64\Debug\sendThread.obj
@@ -14,4 +23,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:03.08
+Time Elapsed 00:00:07.18
